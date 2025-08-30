@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-class Vehicle{ // Main class 
+class Vehicle{ // Main class representing real-world vehicle entity with its attributes and methods
     private:
-    string type; //attribute
-    int maxSpeed; //attribute
-    string fuelType; //attribute
+    string type; //attribute of vehicle class
+    int maxSpeed; //attribute of vehicle class
+    string fuelType; //attribute of vehicle class
     public:
     void accelerate(){ //method to accelerate
         cout<< "The "<< type << " is accelerating to " << maxSpeed << " km/h."<< endl;
@@ -54,4 +54,5 @@ int main(){
         vehicle.accelerate();
     }
     return 0;
+
 }
