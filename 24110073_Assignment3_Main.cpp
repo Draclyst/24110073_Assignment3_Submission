@@ -1,3 +1,5 @@
+//Code is written with help from VSCode autofill suggestions
+
 #include <iostream>
 using namespace std;
 
@@ -69,3 +71,4 @@ int main(){
     return 0;
 
 }
+
