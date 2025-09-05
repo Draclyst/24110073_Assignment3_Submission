@@ -34,11 +34,27 @@ class Vehicle{ // Main class
 };
 
 int main(){
-    for( int i =0;i < 3;i++){
+    Vehicle vehicle;
+    vehicle.setType("Car");
+    vehicle.setFuelType("Diesel");
+    vehicle.setMaxSpeed(200);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    vehicle.setType("Truck");
+    vehicle.setFuelType("Gasoline");
+    vehicle.setMaxSpeed(150);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    vehicle.setType("Motorcycle");
+    vehicle.setFuelType("Gasoline");
+    vehicle.setMaxSpeed(180);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    for( int i =0;i < 1;i++){
         Vehicle vehicle;
         string type, fuelType;
         int maxSpeed;
-        cout<< "Vehicle " << i+1 << " type:"; //vehicle input down here
+        cout<< "Vehicle type:"; //vehicle input down here
         cin>>type;
         cout<<"Fuel type: ";
         cin>>fuelType;
@@ -51,4 +67,5 @@ int main(){
         vehicle.accelerate();
     }
     return 0;
+
 }
