@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-class Vehicle{ // Main class representing real-world vehicle entity with its attributes and methods
+class Vehicle{ // Main class 
     private:
-    string type; //attribute of vehicle class
-    int maxSpeed; //attribute of vehicle class
-    string fuelType; //attribute of vehicle class
+    string type; //attribute
+    int maxSpeed; //attribute
+    string fuelType; //attribute
     public:
     void accelerate(){ //method to accelerate
-        cout<< "The "<< type << " is accelerating to " << maxSpeed << " km/h."<< endl;
+        cout<< "The "<< type << " is accelerating to " << maxSpeed << " km/h"<< endl;
     }
     string getType(){ //method to gettype from private
         return type;
@@ -34,14 +34,27 @@ class Vehicle{ // Main class representing real-world vehicle entity with its att
 };
 
 int main(){
-    int VehiclesCount; //object
-    cout << "Vehicle count: ";
-    cin >> VehiclesCount; 
-    for( int i =0;i < VehiclesCount;i++){
+    Vehicle vehicle;
+    vehicle.setType("Car");
+    vehicle.setFuelType("Diesel");
+    vehicle.setMaxSpeed(200);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    vehicle.setType("Truck");
+    vehicle.setFuelType("Gasoline");
+    vehicle.setMaxSpeed(150);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    vehicle.setType("Motorcycle");
+    vehicle.setFuelType("Gasoline");
+    vehicle.setMaxSpeed(180);
+    vehicle.displayInfo();
+    vehicle.accelerate();
+    for( int i =0;i < 1;i++){
         Vehicle vehicle;
         string type, fuelType;
         int maxSpeed;
-        cout<< "Vehicle " << i+1 << " type:"; //vehicle input down here
+        cout<< "Vehicle type:"; //vehicle input down here
         cin>>type;
         cout<<"Fuel type: ";
         cin>>fuelType;
